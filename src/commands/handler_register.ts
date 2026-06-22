@@ -1,5 +1,4 @@
 import { setUser } from "../config";
-import { handlerLogin } from "./handler_login";
 import { createUser } from "../lib/db/queries/users";
 
 export async function handlerRegister(cmdName: string, ...args: string[]): Promise<void> {

@@ -8,6 +8,20 @@
       "when": 1781955498205,
       "tag": "0000_mature_harrier",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1782125899564,
+      "tag": "0001_cooing_wilson_fisk",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1782132630893,
+      "tag": "0002_fast_deadpool",
+      "breakpoints": true
     }
   ]
 }

@@ -1,5 +1,4 @@
-import { executionAsyncResource } from "node:async_hooks";
-import { getUsers, resetUsers } from "../lib/db/queries/users";
+import { getUsers } from "../lib/db/queries/users";
 import { readConfig } from "../config";
 
 export async function handlerUsers(cmdName: string, ...args: string[]): Promise<void> {
