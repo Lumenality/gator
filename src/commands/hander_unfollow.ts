@@ -1,5 +1,5 @@
 
-import { createFeedFollow, deleteFeedFollow } from "../lib/db/queries/feedFollows";
+import { deleteFeedFollow } from "../lib/db/queries/feedFollows";
 import { getFeedByURL } from "../lib/db/queries/feeds";
 import { User } from "../lib/db/schema";
 

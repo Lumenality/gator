@@ -37,7 +37,7 @@ async function main() {
     console.error("faulty command");
     process.exit(1);
   }
-
+  console.log("Hi, Im here");
   const commandName = input[0];
   const args = input.slice(1);
   await runCommand(commands,commandName,...args)

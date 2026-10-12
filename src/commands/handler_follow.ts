@@ -1,4 +1,3 @@
-
 import { createFeedFollow } from "../lib/db/queries/feedFollows";
 import { getFeedByURL } from "../lib/db/queries/feeds";
 import { User } from "../lib/db/schema";

@@ -3,7 +3,7 @@ import os from "os";
 import path from "path";
 
 export type Config = {
-    dbUrl:string;
+    db.url:string;
     currentUserName:string|null;
 }
 
@@ -26,7 +26,7 @@ function getConfigFilePath(): string {
 }
 function writeConfig(cfg: Config): void {
     const jsonData = JSON.stringify({
-        db_url: cfg.dbUrl,
+        db_url: cfg.db.url,
         current_user_name: cfg.currentUserName
     });
 
@@ -38,7 +38,7 @@ function validateConfig(rawConfig: any): Config {
         throw new Error("invalid config")
     }
     return {
-        dbUrl:rawConfig["db_url"],
+        db.url:rawConfig["db_url"],
         currentUserName:rawConfig["current_user_name"] ?? null,
     }
 };
