@@ -3,7 +3,9 @@ import os from "os";
 import path from "path";
 
 export type Config = {
-    db.url:string;
+    db: {
+        url: string;
+    };
     currentUserName:string|null;
 }
 
@@ -38,7 +40,9 @@ function validateConfig(rawConfig: any): Config {
         throw new Error("invalid config")
     }
     return {
-        db.url:rawConfig["db_url"],
+        db: {
+            url: rawConfig["db_url"],
+        },
         currentUserName:rawConfig["current_user_name"] ?? null,
     }
 };

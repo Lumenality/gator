@@ -33,7 +33,7 @@ async function main() {
   registerCommand(commands,"unfollow",middlewareLoggedIn(handlerUnfollow));
 
   const input = process.argv.slice(2);
-  if (!input) {
+  if (input.length === 0) {
     console.error("faulty command");
     process.exit(1);
   }
